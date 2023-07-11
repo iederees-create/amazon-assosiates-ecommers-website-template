@@ -12,7 +12,7 @@
     <h1>Amazon Products</h1>
   </header>
 
- <div class="product">
+<div class="product">
   <img src="https://m.media-amazon.com/images/I/61+ZW5dZyQL._AC_UY535_.jpg" alt="Product" id="product-image">
   <div class="description">
     <h3>D'Amelio Mayvinaa Platform Sandal</h3>
@@ -21,13 +21,19 @@
     <p>Ships to: South Africa</p>
     <p>Rating: 4.5 stars</p>
     <div class="color-options">
-      <span class="color-option" data-color="pink" onclick="changeColor('https://m.media-amazon.com/images/I/215Kyv32Z7L._SS36_.jpg')">Pink</span>
-      <span class="color-option" data-color="black" onclick="changeColor('https://m.media-amazon.com/images/I/31ytNw0LwPL._SS36_.jpg')">Black</span>
-      <span class="color-option" data-color="blue" onclick="changeColor('https://m.media-amazon.com/images/I/31K+gDvY1iL._SS36_.jpg')">Blue</span>
+      <img class="thumbnail" src="https://m.media-amazon.com/images/I/21SJ-X2++FL._SS36_.jpg" alt="Black" onclick="changeColor('https://m.media-amazon.com/images/I/61+ZW5dZyQL._AC_UY535_.jpg')">
+      <img class="thumbnail" src="https://m.media-amazon.com/images/I/215Kyv32Z7L._SS36_.jpg" alt="Pink" onclick="changeColor('https://m.media-amazon.com/images/I/61nHBQQukmL._AC_SY535._SX._UX._SY._UY_.jpg')">
     </div>
     <a target="_blank" href="https://www.amazon.com/dp/B0C6WSLZT1/ref=s9_acsd_al_bw_c2_x_0_i?pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_r=4FWVMT8YKSKWJD14147F&amp;pf_rd_t=101&amp;pf_rd_p=c26cf883-3f90-482d-979b-fb8958adb8b4&amp;pf_rd_i=117018164011&amp;th=1&_encoding=UTF8&tag=myonlinesh0ff-20&linkCode=ur2&linkId=f18850eaa5393519b94cb8d94fa79320&camp=1789&creative=9325">D'Amelio Mayvinaa Platform Sandal</a>
   </div>
 </div>
+
+<script>
+  function changeColor(imageUrl) {
+    document.getElementById("product-image").src = imageUrl;
+  }
+</script>
+
 
 <script>
   function changeColor(imageUrl) {
