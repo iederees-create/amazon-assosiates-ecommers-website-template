@@ -6,22 +6,35 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-  <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=22&l=ur1&category=babyregistry&banner=16MGMH20XS8MNTXJ7QG2&f=ifr&linkID=665934d7442055fb21ba7906aaf52cab&t=myonlinesh0ff-20&tracking_id=myonlinesh0ff-20" width="250" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+ <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=22&l=ur1&category=babyregistry&banner=1E1JZ736TEVHM3XDRY82&f=ifr&linkID=8e858b4231a6e72a26fb424e3a41d7e7&t=myonlinesh0ff-20&tracking_id=myonlinesh0ff-20" width="250" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
 
   <header>
     <h1>Amazon Products</h1>
   </header>
 
-  <div class="product">
-    <img src="product1.jpg" alt="Product 1">
-    <div class="description">
-      <h3>Product 1</h3>
-      <p>This is the description of Product 1.</p>
-      <p>Price: $10</p>
-      <p>Ships to: South Africa</p>
-      <p>Rating: 4.5 stars</p>
+ <div class="product">
+  <img src="https://m.media-amazon.com/images/I/61+ZW5dZyQL._AC_UY535_.jpg" alt="Product" id="product-image">
+  <div class="description">
+    <h3>D'Amelio Mayvinaa Platform Sandal</h3>
+    <p>This is the description of the D'Amelio Mayvinaa Platform Sandal.</p>
+    <p>Price: $10</p>
+    <p>Ships to: South Africa</p>
+    <p>Rating: 4.5 stars</p>
+    <div class="color-options">
+      <span class="color-option" data-color="pink" onclick="changeColor('https://m.media-amazon.com/images/I/215Kyv32Z7L._SS36_.jpg')">Pink</span>
+      <span class="color-option" data-color="black" onclick="changeColor('https://m.media-amazon.com/images/I/31ytNw0LwPL._SS36_.jpg')">Black</span>
+      <span class="color-option" data-color="blue" onclick="changeColor('https://m.media-amazon.com/images/I/31K+gDvY1iL._SS36_.jpg')">Blue</span>
     </div>
+    <a target="_blank" href="https://www.amazon.com/dp/B0C6WSLZT1/ref=s9_acsd_al_bw_c2_x_0_i?pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_s=merchandised-search-3&amp;pf_rd_r=4FWVMT8YKSKWJD14147F&amp;pf_rd_t=101&amp;pf_rd_p=c26cf883-3f90-482d-979b-fb8958adb8b4&amp;pf_rd_i=117018164011&amp;th=1&_encoding=UTF8&tag=myonlinesh0ff-20&linkCode=ur2&linkId=f18850eaa5393519b94cb8d94fa79320&camp=1789&creative=9325">D'Amelio Mayvinaa Platform Sandal</a>
   </div>
+</div>
+
+<script>
+  function changeColor(imageUrl) {
+    document.getElementById("product-image").src = imageUrl;
+  }
+</script>
+
 
   <div class="product">
     <img src="product2.jpg" alt="Product 2">
