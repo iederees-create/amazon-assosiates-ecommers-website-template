@@ -13,7 +13,19 @@
     </span>
   </a>
 </div>
-
+(function(f) {var _np=(window.P._namespace("DetailPageImageBlockTemplate"));if(_np.guardFatal){_np.guardFatal(f)(_np);}else{f(_np);}}(function(P) {
+    P.now().execute('dp-mark-imageblock',function(){
+        var options = {
+            hasComponents: true,
+            components: [{
+                name: 'thumbnail'
+            }]
+        };
+        if (typeof window.markFeatureRender === 'function') {
+            window.markFeatureRender('imageblock',options);
+        }
+    });
+}));
   <header>
     <h1>Amazon Products</h1>
   </header>
